@@ -1,0 +1,17 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: tensquare-article     #定义微服务的名称，不能使用下划线
+  datasource:                #配置数据源
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.25.133:3306/tensquare_article?characterEncoding=UTF-8
+    username: root
+    password: 123
+  jpa:                       #配置jpa
+    show-sql: true           #显示sql语句
+    generate-ddl: true       #生成ddl语句
+    database: mysql
+
+  redis:
+    host: 192.168.25.133
