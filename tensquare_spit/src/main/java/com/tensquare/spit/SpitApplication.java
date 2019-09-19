@@ -1,14 +1,15 @@
-package com.tensquare.article;
+package com.tensquare.spit;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import sun.security.provider.ConfigFile;
 import util.IdWorker;
 
 @SpringBootApplication
-public class ArticleApplication {
+public class SpitApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ArticleApplication.class);
+        SpringApplication.run(SpitApplication.class);
     }
 
     @Bean
