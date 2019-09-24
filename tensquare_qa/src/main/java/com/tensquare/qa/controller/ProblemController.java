@@ -1,5 +1,6 @@
 package com.tensquare.qa.controller;
 
+import com.tensquare.qa.client.LabelClient;
 import com.tensquare.qa.service.ProblemService;
 import entity.PageResult;
 import entity.Result;
@@ -15,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProblemController {
     @Autowired
     private ProblemService problemService;
+    @Autowired
+    private LabelClient labelClient;
 
     //最新回复的问题显示在上方， 按回复时间降序排序
     @GetMapping("/newlist/{label}/{page}/{size}")
@@ -32,6 +35,12 @@ public class ProblemController {
         PageResult pageResult = problemService.hotlist(label, page, size);
         //返回查询结果
         return new Result(true, StatusCode.OK, "查看成功", pageResult);
+    }
+
+    //根据id进行查询
+    @GetMapping("/label/{id}")
+    public Result findOne(@PathVariable("id") String id){
+        return labelClient.findOne(id);
     }
 
 }

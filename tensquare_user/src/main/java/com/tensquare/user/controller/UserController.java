@@ -77,4 +77,15 @@ public class UserController {
         }
         return new Result(false,StatusCode.ERROR,"无权限删除用户");
     }
+
+    //更新粉丝数
+    @PostMapping("incfans/{friendid}/{x}")
+    public void incfans(@PathVariable String friendid,@PathVariable int x){
+        userService.incfans(friendid,x);
+    }
+    //更新关注数
+    @PostMapping("incfollow/{userid}/{x}")
+    public void incfollow(@PathVariable String userid,@PathVariable int x){
+        userService.incfollow(userid,x);
+    }
 }

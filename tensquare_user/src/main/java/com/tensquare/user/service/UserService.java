@@ -76,4 +76,14 @@ public class UserService {
     public void delete(String userid) {
         userDao.deleteById(userid);
     }
+
+    //更新粉丝数
+    public void incfans(String friendid, int x) {
+        userDao.incfans(friendid,x);
+    }
+
+    //更新关注数
+    public void incfollow(String userid, int x) {
+        userDao.incfollow(userid,x);
+    }
 }
