@@ -4,7 +4,7 @@ import com.tensquare.article.dao.CommentDao;
 import com.tensquare.article.pojo.Comment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import util.IdWorker;
+import utils.IdWorker;
 
 import java.util.List;
 

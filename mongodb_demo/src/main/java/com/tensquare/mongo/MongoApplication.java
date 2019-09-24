@@ -11,6 +11,7 @@ import org.bson.Document;
 import java.util.HashMap;
 
 //测试对mongodb的增删改查
+@testAno
 public class MongoApplication {
     public static void main(String[] args) {
         //创建一个mongodb客户端对象

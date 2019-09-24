@@ -3,7 +3,7 @@ package com.tensquare.base;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import util.IdWorker;
+import utils.IdWorker;
 
 @SpringBootApplication
 public class BaseApplication {

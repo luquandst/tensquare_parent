@@ -3,8 +3,7 @@ package com.tensquare.spit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import sun.security.provider.ConfigFile;
-import util.IdWorker;
+import utils.IdWorker;
 
 @SpringBootApplication
 public class SpitApplication {
